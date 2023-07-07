@@ -44,4 +44,4 @@ The primary objective of a real estate company that specializes in helping homeo
 
  Here we can see some of the categorical data are in form of strings denoted by object Dtype and the numerical are in form of int64 or float64. But not all int64/float64 Dtype are numerical because we have for instance yr_built which is a categorical Dtype but it is expressed in int64/float64.We can also see that sqft_basement is expressed as strings (categorical variable) instead of numeric which we will fix later on.
 
- Some of the categorical data we have include: id,date,waterfront,view,condition,grade,yr_built,   yr_renovated,zipcode
+ Some of the categorical data we have include:id,date,waterfront,view,condition,grade,yr_built,yr_renovated,zipcode
