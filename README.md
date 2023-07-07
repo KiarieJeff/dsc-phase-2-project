@@ -6,7 +6,7 @@ Photo by <a href="https://unsplash.com/@jimmy_conover?utm_source=unsplash&utm_me
 
 #### Overview
 
-In this project, we will apply statistical analytic methods to comprehend the variables affecting home sales in a certain county in the northwest.  Statistical analyses take into account the inherent uncertainty in data. They provide measures of uncertainty, such as p-values, confidence intervals, and standard errors, which allow us to assess the reliability and robustness of our findings.This study intends to investigate the links between numerous independent variables and the dependent variable of home sales by using multiple linear regression modeling.We will be using regression coefficients because they provide specific numerical values that quantify the relationship between the independent variables and the dependent variable.
+In this project, we will apply statistical analytic methods to comprehend the variables affecting home sales in a certain county in the northwest.   
 
 Overall, this analysis aims to advance knowledge and comprehension of the northwest county's housing market by illuminating the variables that have a significant impact on sales and possibly assisting various stakeholders in streamlining their strategies and decision-making procedures.
 
