@@ -54,7 +54,7 @@ We will be creating a simple model where we model price against one independent 
 
  #### Regression Results
 
-![](Data/output2.jpg)
+![](Data/output2.png)
 
 Through the linear regression analysis using the Ordinary Least Squares (OLS) method we built the following model:
 
