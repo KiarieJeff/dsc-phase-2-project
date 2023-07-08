@@ -46,13 +46,21 @@ The primary objective of a real estate company that specializes in helping homeo
 
  Some of the categorical data we have include:id,date,waterfront,view,condition,grade,yr_built,yr_renovated,zipcode
 
- #### Modeling
+#### Modeling
 
-We will be performing a linear regression analysis using the Ordinary Least Squares (OLS) method.The dependent variable (or target variable) in our case price is denoted by y. The sm.add_constant() function is used to add a constant term to the independent variable(s) matrix, which is required in OLS regression models to estimate the intercept term.
+In modeling we will be using the Ordinary Least Squares (OLS) method.The general code to achieve it is:
 
-We will be creating a simple model where we model price against one independent variable and thereafter create other models where we include other variables eg. sqm_above which is sqft_above transformed to a metric scale.
+model = sm.OLS(y, sm.add_constant(X))
 
- #### Regression Results
+where the dependent variable (or target variable) is denoted by y, while the independent variable(s) are represented by X .The sm.add_constant() function is used to add a constant term to the independent variable(s) matrix, which is required in OLS regression models to estimate the intercept term.
+
+We can then fit the OLS model to the data using the fit() method ie. 
+
+results = model.fit()
+
+It calculates the coefficients (slope) and intercept that reduce the overall differences or errors between observed and predicted values. and returns the regression results. The results are stored in the results variable.
+
+#### Regression Results
 
 ![](Data/output2.png)
 
