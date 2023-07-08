@@ -60,7 +60,7 @@ Through the linear regression analysis using the Ordinary Least Squares (OLS) me
 
 price = 6,006,000 + 2934.7sqm_above + 2799.72sqm_basement + 55,510floors + 49,230bathrooms- 3154.97yr_built + 28.64yr_renovated
 
-The above results translates to:
+The above model translates to:
 
 The intercept term is 6,006,000. This represents the estimated price when all the independent variables are zero.
 
