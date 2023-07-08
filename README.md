@@ -45,3 +45,46 @@ The primary objective of a real estate company that specializes in helping homeo
  Here we can see some of the categorical data are in form of strings denoted by object Dtype and the numerical are in form of int64 or float64. But not all int64/float64 Dtype are numerical because we have for instance yr_built which is a categorical Dtype but it is expressed in int64/float64.We can also see that sqft_basement is expressed as strings (categorical variable) instead of numeric which we will fix later on.
 
  Some of the categorical data we have include:id,date,waterfront,view,condition,grade,yr_built,yr_renovated,zipcode
+
+ #### Modeling
+
+We will be performing a linear regression analysis using the Ordinary Least Squares (OLS) method.The dependent variable (or target variable) in our case price is denoted by y. The sm.add_constant() function is used to add a constant term to the independent variable(s) matrix, which is required in OLS regression models to estimate the intercept term.
+
+We will be creating a simple model where we model price against one independent variable and thereafter create other models where we include other variables eg. sqm_above which is sqft_above transformed to a metric scale.
+
+ #### Regression Results
+
+![](Data/output2.jpg)
+
+Through the linear regression analysis using the Ordinary Least Squares (OLS) method we built the following model:
+
+price = 6,006,000 + 2934.7sqm_above + 2799.72sqm_basement + 55,510floors + 49,230bathrooms- 3154.97yr_built + 28.64yr_renovated
+
+The above results translates to:
+
+The intercept term is 6,006,000. This represents the estimated price when all the independent variables are zero.
+
+The coefficient for "sqm_above" is 2934.7. It suggests that, on average, for every square meter increase in above ground living area, the price is expected to increase by $2934.7, holding other variables constant.
+
+The coefficient for "sqm_basement" is 2799.72. It indicates that, on average, for every square meter increase in basement area, the price is expected to increase by $2799.72 , holding other variables constant.
+
+The coefficient for "floors" is 55,510. This implies that, on average, each additional floor in the house is associated with an increase of $55,510 in price, assuming other variables remain constant.
+
+The coefficient for "bathrooms" is 49,230. It suggests that, on average, for each additional bathroom in the house, the price is expected to increase by $49,230 , holding other variables constant.
+
+The coefficient for "yr_built" is -3154.97. It indicates that, on average, for every year increase in the age of the house, the price is expected to decrease by $3154.97 , holding other variables constant.
+
+The coefficient for "yr_renovated" is 28.64. It suggests that, on average, for every year increase in the age of the renovation, the price is expected to increase by $28.64 , holding other variables constant.
+
+#### Conclusion
+
+With the above results we can conclude that :
+
+To maximize the estimated value of the property, consider expanding the above ground living space through additions or remodeling.
+
+If your property has a basement or potential for one, renovating or expanding it could positively impact the estimated value of the home.
+
+If feasible and within zoning regulations, consider adding additional floors to the property to potentially increase its value.
+
+If you are considering renovating your house, it's worth keeping in mind that a more recent renovation might contribute to an increased selling price.
+
