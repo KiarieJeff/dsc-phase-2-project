@@ -6,7 +6,7 @@ Photo by <a href="https://unsplash.com/@jimmy_conover?utm_source=unsplash&utm_me
 
 #### Overview
 
-In this project, we will apply statistical analytic methods to comprehend the variables affecting home sales in a certain county in the northwest.   
+In this project, we will apply statistical analytic methods in this case Multiple Linear Regression Modeling to comprehend the variables affecting home sales in a certain county in the northwest.   
 
 Overall, this analysis aims to advance knowledge and comprehension of the northwest county's housing market by illuminating the variables that have a significant impact on sales and possibly assisting various stakeholders in streamlining their strategies and decision-making procedures.
 
